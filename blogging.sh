@@ -10,7 +10,7 @@ git push
 
 # cleanup "_site"
 cd _site
-rm *
+rm -rf *
 cd ../
 
 # build with Jekyll into "_site"
