@@ -56,7 +56,6 @@ git commit -a -m $(date +%F_%H-%M-%S)
 git push
 
 ```
-
 3. blogging.sh 파일을 실행 (매번 블로그에 수정한 파일을 적용할 때마다 해당 파일을 실행하여야 한다)
 4. custom plugin (paginate-v2)가 적용된 블로그 화면이 나온다
 
