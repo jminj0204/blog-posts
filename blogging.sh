@@ -1,7 +1,7 @@
 # enable error reporting to the console
 set -e
 git add --all
-git commit -a -m $(date +%F_%H-%M-%S)
+git commit -a -m $(date +%F_%H-%M-%S) #	2020-02-13_21-25-40
 git push
 
 # cleanup "_site"
