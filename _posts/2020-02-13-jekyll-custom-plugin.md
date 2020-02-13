@@ -37,13 +37,14 @@ git add --all
 git commit -a -m $(date +%F_%H-%M-%S)
 git push
 
+# clone remote repo to "_site"
+#mkdir _site (_site 폴더가 없다면 실행)
+#git clone https://github.com/username/username.github.io.git _site (username.github.io.git의 .git파일을 불러오기 위함, 처음에만 실행하고 다음번부턴 주석처리)
 
-# cleanup "_site" (이전의 _site 폴더와 충돌을 방지하기 위해 해당 폴더를 삭제하고 다시 생성한다
-rm -rf _site
-mkdir _site
-
-# clone remote repo to "_site" (_site 폴더로 username.github.io의 git 파일을 가져오기 위함이다, blog_repository를 본인의 username.github.io 주소로 바꾼다)
-git clone blog_repository _site
+# cleanup "_site"
+cd _site
+rm -rf * #(.git 파일을 제외한 모든 파일을 지워 폴더 안을 clean)
+cd ../
 
 # build with Jekyll into "_site" (_site 폴더로 build한 파일을 만든다)
 bundle exec jekyll build
