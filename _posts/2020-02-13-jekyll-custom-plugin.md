@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "[Jekyll] Github Page에서 Jekyll Custom Plugins (paginate-v2) 적용하기"
-date:   2020-02-13T11:25:52-05:00
+date:   2020-02-13
 author: Jimin Jeong
 categories: Jekyll
-tags:	Jekyll, Github Page, paginate-v2
 ---
 	
 ## Problem
