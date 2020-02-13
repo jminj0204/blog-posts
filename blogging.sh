@@ -1,7 +1,7 @@
 # enable error reporting to the console
 set -e
 git add --all
-git commit -a -m "2020"
+git commit -a -m $(date +%F_%H-%M-%S)
 git push
 
 # cleanup "_site"
@@ -17,5 +17,5 @@ bundle exec jekyll build
 # push
 cd _site
 git add --all
-git commit -a -m "2020"
+git commit -a -m $(date +%F_%H-%M-%S)
 git push
