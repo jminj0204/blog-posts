@@ -23,8 +23,8 @@ description: >
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://jiminjeong22.github.io" # the base hostname & protocol for your site
-cover: "/assets/header_image.jpg"
-logo: "/assets/logo.png"
+cover: "/assets/my/header_image.gif"
+logo: "/assets/my/pixel-art-computer-icons-pixel-art.jpg"
 
 # Build settings
 markdown: kramdown
