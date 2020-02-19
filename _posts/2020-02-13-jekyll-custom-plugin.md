@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "[Jekyll] Github Page에서 Jekyll Custom Plugins (paginate-v2) 적용하기"
-date:   2020-02-13T11:25:52-05:00
+date:   2020-02-13
 author: Jimin Jeong
 categories: Jekyll
-tags:	Jekyll, Github Page, paginate-v2
 ---
 	
 ## Problem
@@ -38,13 +37,14 @@ git add --all
 git commit -a -m $(date +%F_%H-%M-%S)
 git push
 
+# clone remote repo to "_site"
+#mkdir _site (_site 폴더가 없다면 실행)
+#git clone https://github.com/username/username.github.io.git _site (username.github.io.git의 .git파일을 불러오기 위함, 처음에만 실행하고 다음번부턴 주석처리)
 
-# cleanup "_site" (이전의 _site 폴더와 충돌을 방지하기 위해 해당 폴더를 삭제하고 다시 생성한다
-rm -rf _site
-mkdir _site
-
-# clone remote repo to "_site" (_site 폴더로 username.github.io의 git 파일을 가져오기 위함이다, blog_repository를 본인의 username.github.io 주소로 바꾼다)
-git clone blog_repository _site
+# cleanup "_site"
+cd _site
+rm -rf * #(.git 파일을 제외한 모든 파일을 지워 폴더 안을 clean)
+cd ../
 
 # build with Jekyll into "_site" (_site 폴더로 build한 파일을 만든다)
 bundle exec jekyll build
@@ -56,7 +56,6 @@ git commit -a -m $(date +%F_%H-%M-%S)
 git push
 
 ```
-
 3. blogging.sh 파일을 실행 (매번 블로그에 수정한 파일을 적용할 때마다 해당 파일을 실행하여야 한다)
 4. custom plugin (paginate-v2)가 적용된 블로그 화면이 나온다
 
@@ -64,7 +63,5 @@ git push
 위의 과정을 Travis-CI로 자동화할 수 있지만, 언급했듯이 필자는 윈도우 OS이기 때문에 스크립트를 활용해 수동적으로 build하는 방법을 사용하였다.  
 
 paginate-v2뿐만 아니라 다른 jekyll의 custom plugin 역시 해당 방법을 사용하면 적용될 것이다. 필자는 paginate-v2를 적용하기를 간절히 원하여 여러 방법을 시도하며 시간을 많이 소비하였기에 해당 글이 다른 개발자분들에게 도움이 되었으면 하는 바람이다.
-
-위의 코드에서 매번 _site 내 git clone이 아닌 .git 파일만 남기는 방법이 시간을 더욱 단축시킬 수 방안이라 생각하지만, 필자가 현재 프로그래밍 초보이다 보니 이후 수정할 방안을 찾아보도록 할 것이다. 
 
 글과 관련된 질문이나 수정사항은 댓글로 남겨주거나, 블로그 내 이메일을 통해 연락을 주면 좋을 것 같다. 
