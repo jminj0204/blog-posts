@@ -1,4 +1,10 @@
-# [Jekyll] Jekyll로 Github Blog 만들기
+---
+layout: post
+title: "[Jekyll] Jekyll로 Github Blog 만들기"
+date:   2020-02-19
+author: Jimin Jeong
+categories: Jekyll
+---
 cannot load such file -- 2.6/rubyeventmachine (LoadError)
 gem uninstall eventmachine
 gem install eventmachine --platform ruby
