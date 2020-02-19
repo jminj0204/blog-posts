@@ -5,11 +5,14 @@ date:   2020-02-19
 author: Jimin Jeong
 categories: Jekyll
 ---
-cannot load such file -- 2.6/rubyeventmachine (LoadError)
+`cannot load such file -- 2.6/rubyeventmachine (LoadError)`
+
+```
 gem uninstall eventmachine
 gem install eventmachine --platform ruby
+```
 
-jekyll serve --livereload or bundle exec jekyll serve --livereload
+``jekyll serve --livereload` or `bundle exec jekyll serve --livereload`
 http://127.0.0.1:4000/ 에 자동 생성 (_config.yml은 수정해도 적용되지 않음, 다시 커맨드를 입력해야함)
 
 지킬 무슨 테마 사용했는지
