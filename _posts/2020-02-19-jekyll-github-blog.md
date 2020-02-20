@@ -17,4 +17,4 @@ http://127.0.0.1:4000/ 에 자동 생성 (_config.yml은 수정해도 적용되�
 
 지킬 무슨 테마 사용했는지
 에스코어 드림 적용
-ERROR `/css/S-Core-Dream-full/scdream3-webfont.woff2' not found.
+`ERROR /css/S-Core-Dream-full/scdream3-webfont.woff2' not found.`
