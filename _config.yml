@@ -16,15 +16,15 @@ exclude:
 #subtitle: "A Dev Blog by Jimin Jeong"
 email: jminj0204@gmail.com
 name: Jimin Jeong
-description: >
-  A simple development website or blog.
+#description: >
+#  A simple development website or blog.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://jiminjeong22.github.io" # the base hostname & protocol for your site
-cover: "/assets/my/header_image33.png"
-logo: "/assets/my/jmin.png"
+cover: "/assets/my/header_image55.png"
+logo: "/assets/my/blog.png"
 
 # Build settings
 markdown: kramdown
@@ -180,13 +180,13 @@ social:
 # These are for automatically generating sharing metadata for FB and Twitter
 # OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
 protocols:
-    fb_image: "/assets/my/original.gif"
+    fb_image: "/assets/my/header_image66.png"
     fb_image_width: 612
     fb_image_height: 605
     fb_image_type: "image/png"
 
-    twitter_image: "/assets/my/original.gif"
+    twitter_image: "/assets/my/header_image66.png"
 
-    os_repo: "https://github.com/bencentra/centrarium.com"
+    os_repo: "https://github.com/jiminjeong22/jiminjeong22.github.io"
     os_rcs_type: "git"
-    os_src: "git@github.com:bencentra/centrarium.com.git"
+    os_src: "git@github.com/jiminjeong22/jiminjeong22.github.io.git"
