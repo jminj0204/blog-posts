@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 main_nav: true
 ---
-![image](/assets/my/header_image66.png)
+
 
 사람과 기술을 이어주는 다리  
 
