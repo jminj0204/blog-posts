@@ -1,8 +1,8 @@
 # enable error reporting to the console
 set -e
-git add --all
-git commit -a -m $(date +%F_%H-%M-%S) #	2020-02-13_21-25-40
-git push
+#git add --all
+#git commit -a -m $(date +%F_%H-%M-%S) #	2020-02-13_21-25-40
+#git push
 
 # clone remote repo to "_site"
 #mkdir _site
